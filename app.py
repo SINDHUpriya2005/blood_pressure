@@ -15,7 +15,7 @@ result_map = {
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('templates/predict_form.html')
 def predict_form():
