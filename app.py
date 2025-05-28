@@ -38,10 +38,10 @@ def predict():
         }
         result = result_map.get(prediction, "Unknown")
 
-        return render_template("result.html", prediction_text=f"Your Blood Pressure stage is: {result}")
+        return render_template("result.html", prediction_text=result)
 
     except Exception as e:
-        return f"Error: {e}"
+        return render_template("result.html", prediction_text=f"Error: {str(e)}")
 
 if __name__ == "__main__":
     app.run(debug=True)
