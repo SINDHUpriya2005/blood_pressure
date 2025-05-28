@@ -7,7 +7,7 @@ import pickle
 
 # Load and preprocess data
 def load_and_preprocess_data(filepath):
-    df = pd.read_csv(filepath)
+    df = pd.read_csv(patient_data.csv)
     df.rename(columns={'C':'Gender'}, inplace=True)
     
     # Columns to encode
