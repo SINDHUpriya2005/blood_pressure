@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Form</title>
+</head>
+<body>
+    <h2>Enter Your Details</h2>
+    <form action="/predict" method="post">
+        <label>Gender (0=Female, 1=Male):</label>
+        <input type="number" name="Gender" required><br>
+
+        <label>Age:</label>
+        <input type="number" name="Age" required><br>
+
+        <label>Patient (0=No, 1=Yes):</label>
+        <input type="number" name="Patient" required><br>
+
+        <label>Severity (0=Mild, 1=Moderate, 2=Severe):</label>
+        <input type="number" name="Severity" required><br>
+
+        <label>BreathShortness (0=No, 1=Yes):</label>
+        <input type="number" name="BreathShortness" required><br>
+
+        <label>VisualChanges (0=No, 1=Yes):</label>
+        <input type="number" name="VisualChanges" required><br>
+
+        <label>NoseBleeding (0=No, 1=Yes):</label>
+        <input type="number" name="NoseBleeding" required><br>
+
+        <label>Whendiagnoused (0=Recently, 1=Earlier):</label>
+        <input type="number" name="Whendiagnoused" required><br>
+
+        <label>Systolic:</label>
+        <input type="number" name="Systolic" required><br>
+
+        <label>Diastolic:</label>
+        <input type="number" name="Diastolic" required><br>
+
+        <label>ControlledDiet (0=No, 1=Yes):</label>
+        <input type="number" name="ControlledDiet" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
