@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Result</title>
+    <title>Prediction Result</title>
 </head>
 <body>
-    <h2>{{ prediction_text }}</h2>
-    <a href="/">Back to Home</a>
+    <h1>Prediction Result</h1>
+    <div class="result">
+        <p>{{ prediction_text }}</p>
+    </div>
+    <a href="/predict-form">Make another prediction</a>
+    <br>
+    <a href="/">Return to Home</a>
 </body>
 </html>
