@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f0f8ff;
+}
+h2 {
+    color: #2e6da4;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
