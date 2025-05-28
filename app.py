@@ -27,9 +27,9 @@ RESULT_MAP = {
 def home():
     return render_template('index.html')
 
-@app.route('/predict-form')
+@app.route('templates/predict_form.html')
 def predict_form():
-    return render_template('predict_form.html')
+    return render_template('templates/predict_form.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
