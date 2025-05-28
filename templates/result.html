@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Prediction Result</h1>
-    <div class="result">
-        <p>{{ prediction_text }}</p>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-box">
+            <p>{{ prediction_text }}</p>
+        </div>
+        <a href="/predict-form" class="btn">New Prediction</a>
+        <a href="/" class="btn">Home</a>
     </div>
-    <a href="templates/predict_form.html">Make another prediction</a>
-    <br>
-    <a href="/">Return to Home</a>
 </body>
 </html>
