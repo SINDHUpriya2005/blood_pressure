@@ -7,9 +7,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pickle
 
-def load_and_preprocess_data(filepath):
+def load_and_preprocess_data(patient_data.csv):
     try:
-        df = pd.read_csv(filepath)
+        df = pd.read_csv(patient_data.csv)
         df.rename(columns={'C':'Gender'}, inplace=True)
         
         columns = ['Gender','Age','History','Patient','TakeMedication',
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         for item in BASE_DIR.iterdir():
             print(f" - {item.name}")
     else:
-        df = load_and_preprocess_data(data_path)
+        df = load_and_preprocess_data(patient_data.csv)
         if df is not None:
             model = train_and_save_model(df)
             print("Model trained and saved as model.pkl")
